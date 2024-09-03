@@ -3,63 +3,95 @@
   flex-direction: column;
   align-items: center; /* Centers the content horizontally */
   text-align: center;
-  /* width: 80%; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 720px;
   margin-top: 100px;
   margin-bottom: 100px;
+  padding: 20px; /* Adds some padding for smaller screens */
 }
 
-/* .kathmandu-container__heading {
+.kathmandu-container__heading {
   color: white;
   padding-top: 20px;
-} */
+  font-size: 2em; /* Adjust heading size for better visibility */
+  margin: 10px 0; /* Space around the heading */
+}
 
 .kathmandu-container__banner {
-  width: 840px; /* Specify the width */
+  width: 100%; /* Make the banner take the full width of the container */
+  max-width: 840px; /* Limit the maximum width */
   display: flex;
-  margin-top: 100px;
-  /* height: 230px; */
+  margin-top: 50px; /* Reduce margin for better spacing on smaller screens */
   justify-content: center;
   align-items: center;
 }
 
 .kathmandu-container__banner img {
-  height: 250px;
-  overflow-x: hidden;
+  max-width: 100%; /* Make the image scale with the container */
+  height: auto; /* Maintain aspect ratio */
 }
+
 .kathmandu-container__block {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  width: 840px;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  width: 100%;
+  max-width: 840px;
   justify-content: space-between;
   align-self: center;
 }
+
 .kathmandu-container__block-img {
   display: flex;
+  width: 100%;
+  max-width: 264px; /* Limit the maximum width for each block */
+  margin-bottom: 20px; /* Space between block images */
 }
 
 .kathmandu-container__block-img img {
-  height: auto;
-  width: 264px;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 1024px) {
+  .kathmandu-container {
+    padding: 10px; /* Adjust padding for medium screens */
+  }
+
+  .kathmandu-container__banner {
+    width: 90%; /* Reduce width to fit medium screens */
+  }
+
+  .kathmandu-container__block {
+    flex-direction: column; /* Stack blocks vertically */
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 749px) {
-  .kathmandu-container__banner {
-    width: 600px; /* Specify the width */
-    display: flex;
-    margin-top: 100px;
-    /* height: 230px; */
-    justify-content: center;
-    align-items: center;
+  .kathmandu-container {
+    padding: 5px; /* Less padding for small screens */
   }
+
+  .kathmandu-container__banner {
+    width: 100%; /* Full width for small screens */
+    margin-top: 50px; /* Adjust margin */
+  }
+
   .kathmandu-container__block {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%; /* Full width for block container */
+    margin-top: 10px; /* Reduce top margin */
+  }
+
+  .kathmandu-container__block-img {
+    width: 100%; /* Make each block image full width */
+    margin-bottom: 10px; /* Space between block images */
+  }
+
+  .kathmandu-container__heading {
+    font-size: 1.5em; /* Reduce heading size for smaller screens */
   }
 }
