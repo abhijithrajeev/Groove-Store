@@ -1,0 +1,65 @@
+.kathmandu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  text-align: center;
+  /* width: 80%; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* .kathmandu-container__heading {
+  color: white;
+  padding-top: 20px;
+} */
+
+.kathmandu-container__banner {
+  width: 840px; /* Specify the width */
+  display: flex;
+  margin-top: 100px;
+  /* height: 230px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.kathmandu-container__banner img {
+  height: 250px;
+  overflow-x: hidden;
+}
+.kathmandu-container__block {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 840px;
+  justify-content: space-between;
+  align-self: center;
+}
+.kathmandu-container__block-img {
+  display: flex;
+}
+
+.kathmandu-container__block-img img {
+  height: auto;
+  width: 264px;
+}
+
+@media screen and (max-width: 749px) {
+  .kathmandu-container__banner {
+    width: 600px; /* Specify the width */
+    display: flex;
+    margin-top: 100px;
+    /* height: 230px; */
+    justify-content: center;
+    align-items: center;
+  }
+  .kathmandu-container__block {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

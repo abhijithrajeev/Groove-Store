@@ -1,0 +1,63 @@
+{{ 'section-am-image-scroll.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings['am-image-scroll-image'] %}
+  <div class="am-scroll-block">
+    <div class="image-scroll__text-container am-image-scroll__content">
+    <img src="{{ section.settings['am-image-scroll-image'] | image_url }}"> 
+      <h5 class="am-image-scroll__heading">{{ section.settings['am-image-scroll-heading'] }}</h5>
+      <h2 class="am-image-scroll__subheading">{{ section.settings['am-image-scroll-subheading'] }}</h2>
+      <a class="am-image-scroll__btn" href="{{ section.settings.am-image-scroll-button-url }}">
+        {{ section.settings['am-image-scroll-button-text'] }}
+      </a>
+    </div>
+    <div class="am-scroll-block__bg-block">
+      <div
+        class="image-scroll am-image-scroll"
+        style="background-image:url('{{ section.settings.am-image-scroll-image | image_url }}')"
+              
+      ></div>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Image Scroll Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "am-image-scroll-heading",
+      "label": "Title",
+      "default": "Enter Heading"
+    },
+    {
+      "type": "text",
+      "id": "am-image-scroll-subheading",
+      "label": "Subheading",
+      "default": "Enter subheading"
+    },
+    {
+      "type": "image_picker",
+      "id": "am-image-scroll-image",
+      "label": "Choose Image"
+    },
+    {
+      "type": "text",
+      "id": "am-image-scroll-button-text",
+      "label": "Button Text",
+      "default": "Button"
+    },
+    {
+      "type": "url",
+      "id": "am-image-scroll-button-url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Banner",
+      "name": "Image Scroll Section"
+    }
+  ]
+}
+{% endschema %}

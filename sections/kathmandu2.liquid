@@ -1,0 +1,56 @@
+{{ 'section-kathmandu2.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings['kathmandu-container__bg-image'] %}
+    <div class="kathmandu-container" style="background-image: url('{{ section.settings['kathmandu-container__bg-image'] | image_url }}');">
+        <h5 class="kathmandu-container__heading">{{ section.settings['kathmandu-container__heading'] }}</h5>
+        <div class="kathmandu-container__banner">
+            {{ section.settings.kathmandu-container__banner-img | image_url:width:840 | image_tag:class:'kathmandu-container__banner-img' }}
+        </div>
+        <div class="kathmandu-container__block">
+            {%- for block in section.blocks -%}
+                <div class="kathmandu-container__block-img">
+                    {{ block.settings.kathmandu-container__block-img1 | image_url:width:500 | image_tag:class:'test' }}
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Kathmandu Section",
+    "settings": [
+        {
+         "type": "image_picker",
+         "id": "kathmandu-container__bg-image",
+         "label": "Choose Background Image"
+        },
+        {
+         "type": "image_picker",
+         "id": "kathmandu-container__banner-img",
+         "label": "Choose Banner Image"
+        }
+        
+    ],
+    "max_blocks":3,
+    "blocks": [
+        {
+            "type":"Image",
+            "name":"Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "kathmandu-container__block-img1",
+                    "label": "Choose Block Image 1"
+                }
+            ]
+        }
+    ],
+    "presets": [
+       {
+        "category": "kathmandu-category",
+        "name": "Kathmandu Section"
+       }
+    ]
+}
+{% endschema %}
