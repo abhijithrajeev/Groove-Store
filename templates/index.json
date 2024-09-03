@@ -1,1 +1,140 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Browse our latest products","heading_size":"h0"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"image":"shopify:\/\/shop_images\/acoustic-guitar-dream-meaning-66bc481a7728e.jpg","image_overlay_opacity":40,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":8,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}},"172361935920497bde":{"type":"apps","blocks":{"instafeed_app_block_BtbRfA":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"","title_color":"","alignment":"center","background_color":"","html_area":""}}},"block_order":["instafeed_app_block_BtbRfA"],"settings":{"include_margins":true}}},"order":["image_banner","featured_collection","172361935920497bde"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/acoustic-guitar-dream-meaning-66bc481a7728e.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "172361935920497bde": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_BtbRfA": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_BtbRfA"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "kathmandu2_Mhx9Di": {
+      "type": "kathmandu2",
+      "blocks": {
+        "image_fQGXjb": {
+          "type": "Image",
+          "settings": {
+            "kathmandu-container__block-img1": "shopify:\/\/shop_images\/katmandu_image_1_2ec8c1e6-9805-4951-947a-c0ec6b9e00ab.png"
+          }
+        },
+        "image_ALdhym": {
+          "type": "Image",
+          "settings": {
+            "kathmandu-container__block-img1": "shopify:\/\/shop_images\/katmandu_image_2_2d1ab523-4ee9-469b-aacb-a60dc7b03ccd.png"
+          }
+        },
+        "image_A43gDe": {
+          "type": "Image",
+          "settings": {
+            "kathmandu-container__block-img1": "shopify:\/\/shop_images\/katmandu_image_3_8a4468fe-d509-4f04-bb2b-07378e061b8b.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_fQGXjb",
+        "image_ALdhym",
+        "image_A43gDe"
+      ],
+      "settings": {
+        "kathmandu-container__bg-image": "shopify:\/\/shop_images\/Screenshot_2024-08-16_201044.png",
+        "kathmandu-container__banner-img": "shopify:\/\/shop_images\/katmandu_banner_image_c97cd0f7-cf29-4d20-9eaf-ab8067f4138a.png"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "172361935920497bde",
+    "kathmandu2_Mhx9Di"
+  ]
+}
